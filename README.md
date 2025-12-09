@@ -21,7 +21,6 @@
 - Тёмная тема, PWA, устанавливается на телефон/комп
 
 ### Скриншоты
-### Скриншоты
 <div align="center">
   <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot1.png" width="49%" style="border-radius:12px; margin:5px">
   <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot2.png" width="49%" style="border-radius:12px; margin:5px">
