@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <h1>📰 News Aggregator</h1>
+            <div class="header-controls">
+                <button id="refresh-btn" class="btn btn-primary">
+                    <span class="icon">🔄</span> Обновить
+                </button>
+                <button id="settings-btn" class="btn btn-secondary">
+                    <span class="icon">⚙️</span>
+                </button>
+            </div>
+        </header>
+
+        <nav class="topics-nav" id="topics-nav">
+            <button class="topic-btn active" data-topic="all">Все</button>
+        </nav>
+
+        <main class="main-content">
+            <aside class="sidebar" id="sidebar">
+                <div class="feeds-section">
+                    <h3>RSS Источники</h3>
+                    <ul id="feeds-list"></ul>
+                    <div class="add-feed">
+                        <input type="url" id="new-feed-url" placeholder="RSS URL...">
+                        <button id="add-feed-btn" class="btn btn-small">+</button>
+                    </div>
+                </div>
+                <div class="stats-section">
+                    <h3>Статистика</h3>
+                    <div id="stats"></div>
+                </div>
+            </aside>
+
+            <section class="news-feed" id="news-feed">
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    <p>Загрузка новостей...</p>
+                </div>
+                <div id="news-list"></div>
+            </section>
+
+            <aside class="summary-panel" id="summary-panel">
+                <h3>📋 AI Саммари темы</h3>
+                <div id="topic-summary">
+                    <p class="placeholder">Выберите тему для получения AI-саммари</p>
+                </div>
+            </aside>
+        </main>
+
+        <!-- Settings Modal -->
+        <div class="modal" id="settings-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Настройки</h2>
+                    <button class="close-btn" id="close-settings">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="setting-group">
+                        <label>🔑 Groq API Key</label>
+                        <input type="password" id="api-token" placeholder="gsk_...">
+                        <small style="color: var(--text-muted); font-size: 0.8rem;">
+                            Получить бесплатно: <a href="https://console.groq.com/keys" target="_blank" style="color: var(--primary);">console.groq.com</a>
+                        </small>
+                    </div>
+                    <div class="setting-group">
+                        <label>⏱️ Интервал обновления (мин)</label>
+                        <input type="number" id="refresh-interval" value="30" min="5">
+                    </div>
+                    <div class="setting-group">
+                        <label style="display: flex; align-items: center; cursor: pointer;">
+                            <input type="checkbox" id="auto-summarize" checked style="margin-right: 8px;">
+                            🤖 Автоматическое создание саммари
+                        </label>
+                    </div>
+                    <div class="setting-group">
+                        <button class="btn btn-secondary" id="test-api-btn" style="width: 100%;">
+                            🧪 Проверить подключение к API
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" id="save-settings">Сохранить</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Detail Modal -->
+        <div class="modal" id="news-modal">
+            <div class="modal-content modal-large">
+                <div class="modal-header">
+                    <h2 id="news-title"></h2>
+                    <button class="close-btn" id="close-news">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="news-meta" id="news-meta"></div>
+                    <div class="news-content" id="news-content"></div>
+                    <div class="news-summary" id="news-summary">
+                        <h4>🤖 AI Саммари</h4>
+                        <div id="article-summary"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
