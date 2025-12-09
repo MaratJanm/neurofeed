@@ -21,10 +21,11 @@
 - Тёмная тема, PWA, устанавливается на телефон/комп
 
 ### Скриншоты
-<img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot1.png" width="49%" align="right" style="border-radius:12px">
-<img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot2.png" width="49%" style="border-radius:12px">
-
-<br clear="right">
+### Скриншоты
+<div align="center">
+  <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot1.png" width="49%" style="border-radius:12px; margin:5px">
+  <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot2.png" width="49%" style="border-radius:12px; margin:5px">
+</div>
 
 ### Как запустить за 30 секунд
 ```bash
