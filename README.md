@@ -2,7 +2,7 @@
 
 <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot.png" align="right" width="380">
 
-**Полные тексты статей + ИИ-саммари по темам + работает оффлайн = всё, что ты хотел от RSS в 2025 году.**
+**Полные тексты статей + ИИ-саммари по темам = всё, что ты хотел от RSS в 2025 году.**
 
 Никаких дублей.  
 Никакой рекламы и трекеров.
@@ -10,8 +10,14 @@
 ### Потестировать прямо сейчас:
 Открой https://maratjanm.github.io/neurofeed
 
+### Скриншоты
+<div align="center">
+  <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot1.png" width="49%" style="border-radius:12px; margin:5px">
+  <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot2.png" width="49%" style="border-radius:12px; margin:5px">
+</div>
+
 ### Возможности
-- Полные тексты статей прямо в приложении (95 % источников)
+- Добавление любих RSS источников
 - Автоопределение тем: AI, Технологии, Безопасность, Бизнес и др.
 - ИИ-саммари одной статьи за секунду
 - Ежедневные обзоры по темам (типа "Что важного в мире ИИ сегодня")
@@ -20,11 +26,6 @@
 - Автообновление каждые N минут
 - Тёмная тема, PWA, устанавливается на телефон/комп
 
-### Скриншоты
-<div align="center">
-  <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot1.png" width="49%" style="border-radius:12px; margin:5px">
-  <img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot2.png" width="49%" style="border-radius:12px; margin:5px">
-</div>
 
 ### Как запустить за 30 секунд
 ```bash
