@@ -21,7 +21,10 @@ https://maratjanm.github.io/neurofeed
 - Тёмная тема, PWA, устанавливается на телефон/комп
 
 ### Скриншоты
-![screenshot](screenshot.png)
+<img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot1.png" width="49%" align="right" style="border-radius:12px">
+<img src="https://github.com/MaratJanm/neurofeed/raw/main/screenshot2.png" width="49%" style="border-radius:12px">
+
+<br clear="right">
 
 ### Как запустить за 30 секунд
 ```bash
